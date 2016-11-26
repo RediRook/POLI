@@ -1,0 +1,107 @@
+body {
+   background: white;
+   font-size: 12pt;
+   color:black;
+   }
+
+.wrapper, #content {
+   width: auto;
+   margin: 0 5%;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   }
+   
+div#content {
+   margin-left: 10%;
+   padding-top: 1em;
+   border-top: 1px solid #930;
+   }
+div#mast {
+   margin-bottom: -8px;
+   }
+div#mast img {
+   vertical-align: bottom;
+   }
+a:link, a:visited {
+   color: #520;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+   }
+#content a:link:after, #content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+#content a[href^="/"]:after {
+   content: " (http://www.alistapart.com" attr(href) ") ";
+   }
+/* Show Title */
+.title{
+	display:block;
+	font-size:14pt;
+	font-weight:bold;
+	text-decoration:underline;
+	text-align:center;
+	margin:10px 0 30px 0;
+}
+
+.mainTitle{
+	display:block;
+	font-size:18pt;
+	font-weight:bold;
+	text-align:center;
+	margin:50px 0 20px 0;
+}
+
+.toothChart{
+	display:block;
+	text-align:center;
+}
+
+/* Hide all banner and logo*/   
+#top, #userProfileImg, #userProfile, #sideMenuBar, #homeIcon, #signout, button, #currentLocation, #footer, #location, #btnPrint,.btn, #btnEdit, #btnSave, #btnNew, #divTable, #tb_paginate{
+	display:none;
+}
+
+#systemLogo{
+	text-align:center;
+}
+
+/* Table */
+#resultsTable {
+	border-left:1px solid #000000;
+	border-top:1px solid #000000;
+	text-align:left;
+	color:black;
+}
+
+#resultsTable th{
+	font-weight:bold;
+}
+
+#resultsTable td, #resultsTable th{
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+	padding:3px 3px;
+}
+
+#resultsTable td {
+   padding: 12px 35px 12px 35px;
+   font-size: 12pt;
+   font-weight:100;
+}
+
+#resultsTable tr:nth-child(even) {
+  background: white;
+}
+
+/* Show URL */
+a:link, a:visited {background: transparent; color:#333; text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="http://"] {color:#000;} 
+#divReportTitle{
+	display: block;
+}

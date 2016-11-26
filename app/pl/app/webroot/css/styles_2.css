@@ -1,0 +1,467 @@
+	/*Background Body*/
+	body	{
+		margin:0px;
+		padding:0px;
+		background-color:rgb(219,242,243);
+	}
+	
+	/*Remove Blue Border Link ing Images for Internet Explorer*/
+	a img {
+		border: none; 
+	}
+	
+	/*Body for the text and everything*/
+	#wrapper 	{
+		width: 1000px;
+		margin: auto;
+		background-color: #ffffff;
+		-moz-box-shadow: 0 0 25px #88888;
+		-webkit-box-shadow: 0 0 25px #88888;
+	}
+	
+	#container 	{
+		background-color: #ffffff;
+		padding-left:20px;
+		padding-right:20px;
+		padding-top:0px;
+		padding-bottom: 20px;
+	}
+	
+	.menu	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100px;
+		height: 100px;
+	}
+
+	/*Header Banner*/
+	.header	{
+		text-align:center;
+		padding:0px 0px 0px 0px;
+		/*Banner creating empty space at bottom (Temporary Fix)*/
+		margin-bottom:-10px;
+	}
+	
+	.footer	{
+		background-color:rgb(232,137,15);
+		margin:0px auto;
+		height:20px;
+		position:relative;
+		width:1000px;
+		list-style:none;
+	}
+	
+	.noscript	{
+		background-color:rgb(232,137,15);
+		margin:0px auto;
+		position:relative;
+		width:1000px;
+		list-style:none;
+	}
+	
+	/*Navigation Button*/
+	.myButton {
+        
+		-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+		-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+		box-shadow: 0px 1px 0px 0px #fff6af;
+			
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+		background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+		background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+		background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+		background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+		background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+        
+		background-color:#ffec64;
+            
+		border-right:1px solid #ffaa22;
+        
+		display:inline-block;
+		color:#333333;
+		font-family:arial;
+		font-size:20px;
+		font-weight:bold;
+		text-decoration:none;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding:0px 0px 0px 0px;
+	}
+    
+		.myButton:hover {
+			
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+			background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+			background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+			background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+			background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+			background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+			color:rgb(66, 66, 9);
+			text-shadow:0px 1px 0px rgb(216, 198, 57);
+			padding:0px 0px 0px 0px;
+		}
+	   
+		.myButton:active {
+			position:relative;
+			top:0px;
+			padding:0px 0px 0px 0px;
+		}
+   
+	/*Navigation Bar*/
+	.topNav{
+		padding:0px 0px 0px 0px;
+		background-color:rgb(232,137,15);
+		margin:0px auto;
+		height:25px;
+		position:relative;
+		width:1000px;
+		list-style:none;
+	}
+
+		.topNav li{
+			float:left;
+			margin:0px;
+			height:100%;
+		}
+			
+		.topNav li a.active{
+			color:green;
+		}
+
+		.topNav li a{
+			position:relative;
+			text-decoration:none;
+			color:white;
+			letter-spacing: 0px;
+			padding: 12px 20px;
+		}
+		
+	.topNav div	{	
+		position: absolute;
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+		background-color:rgb(232,137,15);
+	}
+
+		.topNav div a	{	
+			position: relative;
+			display: block;
+			margin: 0;
+			white-space: nowrap;
+			text-align: left;
+			text-decoration: none;
+		}
+
+		.topNav div a:hover	{	
+			background: #49A3FF;
+			background-color:rgb(232,137,15);
+		}
+	
+	.b-close{
+		cursor:pointer;
+		position:absolute;
+		right:10px;
+		top:5px;
+	}
+
+	.gallery {
+	margin-left: auto;
+    margin-right: auto;
+	width:533px;
+	height:400px;
+	}
+
+	/* in case script does not load */
+	.cycle-slideshow img:first-child {
+		position: static; z-index: 100;
+	}
+
+	/* pager */
+	.cycle-pager { 
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	.cycle-pager span { 
+		font-family: arial; 
+		font-size: 50px; 
+		width: 16px; 
+		height: 16px; 
+		display: inline-block; 
+		color: #ddd; 
+		cursor: pointer; 
+	}
+	.cycle-pager span.cycle-pager-active {
+		color: #D69746;
+	}
+	
+	.cycle-pager > * { 
+		cursor: pointer;
+	}
+
+
+	/* caption */
+	.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+	/* overlay */
+	.cycle-overlay { 
+		font-family: tahoma, arial;
+		position: absolute; bottom: 0; width: 100%; z-index: 600;
+		background: black; color: white; padding: 15px; opacity: .5;
+	}
+
+
+	/* prev / next links */
+	.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+	.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+	.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+	.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+	.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+	/* display paused text on top of paused slideshow */
+	.cycle-paused:after {
+		content: 'Paused'; color: white; background: black; padding: 10px;
+		z-index: 500; position: absolute; top: 10px; right: 10px;
+		border-radius: 10px;
+		opacity: .5; filter: alpha(opacity=50);
+	}
+
+	/* 
+		media queries 
+		some style overrides to make things more pleasant on mobile devices
+	*/
+
+	@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+		.cycle-slideshow { width: 200px;}
+		.cycle-overlay { padding: 4px }
+		.cycle-caption { bottom: 4px; right: 4px }
+	}
+	
+	/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+	
+	.reveal-modal {
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+		
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		}
+	
+	.trigger	{
+		text-align:center;
+	}
+	
+	.toggle	{
+		display:none;
+		width:900px;
+	}
+		
+	.list p{
+		height:auto;
+		margin:0;
+	}
+	.expand{
+		float: left;
+		height: auto;
+		width: 90%;
+		line-height: 20px;
+		padding-left: 20px;
+		margin-bottom: 25px;
+		font-style: italic;
+		font-weight:bold;
+	}
+	
+	.login	{
+		position:absolute;
+		font-weight:bold;
+		padding:25px 25px 25px 25px;
+	}
+	
+	/** Forms **/
+	form {
+		clear: both;
+		margin-right: 20px;
+		padding: 0;
+		width: 95%;
+	}
+	fieldset {
+		border: none;
+		margin-bottom: 1em;
+		padding: 16px 10px;
+	}
+	fieldset legend {
+		color: #e32;
+		font-size: 160%;
+		font-weight: bold;
+	}
+	fieldset fieldset {
+		margin-top: 0;
+		padding: 10px 0 0;
+	}
+	fieldset fieldset legend {
+		font-size: 120%;
+		font-weight: normal;
+	}
+	fieldset fieldset div {
+		clear: left;
+		margin: 0 20px;
+	}
+	form div {
+		clear: both;
+		margin-bottom: 1em;
+		padding: .5em;
+		vertical-align: text-top;
+	}
+	form .input {
+		color: #444;
+		
+	}
+	form .required {
+		font-weight: bold;
+	}
+	form .required label:after {
+		color: #e32;
+		content: '*';
+		display:inline;
+	}
+	form div.submit {
+		border: 0;
+		clear: both;
+		margin-top: 10px;
+	}
+	label {
+		display: block;
+		font-size: 110%;
+		margin-bottom:3px;
+	}
+	input, textarea {
+		clear: both;
+		font-size: 140%;
+		font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+		padding: 1%;
+		width:98%;
+	}
+	select {
+		clear: both;
+		font-size: 120%;
+		vertical-align: text-bottom;
+	}
+	select[multiple=multiple] {
+		width: 100%;
+	}
+	option {
+		font-size: 120%;
+		padding: 0 3px;
+	}
+	input[type=checkbox] {
+		clear: left;
+		float: left;
+		margin: 0px 6px 7px 2px;
+		width: auto;
+	}
+	div.checkbox label {
+		display: inline;
+	}
+	input[type=radio] {
+		float:left;
+		width:auto;
+		margin: 6px 0;
+		padding: 0;
+		line-height: 26px;
+	}
+	.radio label {
+		margin: 0 0 6px 20px;
+		line-height: 26px;
+	}
+	input[type=submit] {
+		display: inline;
+		font-size: 110%;
+		width: auto;
+	}
+	form .submit input[type=submit] {
+		background:#62af56;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
+		background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
+		background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
+		border-color: #2d6324;
+		color: #fff;
+		text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
+		padding: 8px 10px;
+	}
+	form .submit input[type=submit]:hover {
+		background: #5BA150;
+	}
+	/* Form errors */
+	form .error {
+		background: #FFDACC;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		font-weight: normal;
+	}
+	form .error-message {
+		-moz-border-radius: none;
+		-webkit-border-radius: none;
+		border-radius: none;
+		border: none;
+		background: none;
+		margin: 0;
+		padding-left: 4px;
+		padding-right: 0;
+	}
+	form .error,
+	form .error-message {
+		color: #9E2424;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-ms-box-shadow: none;
+		-o-box-shadow: none;
+		box-shadow: none;
+		text-shadow: none;
+	}

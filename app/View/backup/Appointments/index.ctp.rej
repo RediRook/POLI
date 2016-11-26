@@ -1,0 +1,20 @@
+diff a/app/View/Appointments/index.ctp b/app/View/Appointments/index.ctp	(rejected hunks)
+@@ -71,9 +71,9 @@
+ </div>
+ <div class="row col-sm-12">
+ 
+-	<div class="modal hide"><?php $urlCalendar = array ('controller'=>'/Appointments','action'=>'calendar');
++	<?php $urlCalendar = array ('controller'=>'/Appointments','action'=>'calendar');
+ 	echo $this->Form->button('View Calendar',array('class'=>'btn btn-primary','onclick' => "location.href='".$this->Html-> url($urlCalendar)."'"));
+-	?></div>
++	?>
+     
+         <?php $urlAdd = array ('controller'=>'/Appointments','action'=>'addAppointment');
+ 	echo $this->Form->button('Add Appointment',array('class'=>'btn btn-primary','onclick' => "location.href='".$this->Html-> url($urlAdd)."'"));?>
+@@ -81,4 +81,5 @@
+ 	<?php $urlDaily = array ('controller'=>'/Appointments','action'=>'daily');
+ 	echo $this->Form->button('View Daily Appointment',array('class'=>'btn btn-primary','onclick' => "location.href='".$this->Html-> url($urlDaily)."'"));
+ 	?>
++    
+ </div>
+\ No newline at end of file
